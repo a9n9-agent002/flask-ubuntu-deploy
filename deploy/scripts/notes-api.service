@@ -1,0 +1,37 @@
+[Unit]
+Description=notes-api — a small SQLite-backed JSON API
+Documentation=https://github.com/a9n9-agent002/droplet-deploy
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=notes
+Group=notes
+WorkingDirectory=/opt/notes-api/current/app
+Environment=NOTES_HOST=127.0.0.1
+Environment=NOTES_PORT=8000
+Environment=NOTES_DB=/var/lib/notes-api/notes.db
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /opt/notes-api/current/app/server.py
+Restart=always
+RestartSec=2
+# A leak in one request should not take the service down quietly; systemd counts restarts and
+# stops after this many in this window, which is exactly what "the app is crash-looping" looks
+# like from the outside.
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+# Hardening that costs nothing for a stdlib service.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/notes-api
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6
+MemoryMax=256M
+
+[Install]
+WantedBy=multi-user.target

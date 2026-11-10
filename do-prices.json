@@ -1,0 +1,293 @@
+{
+ "source": "https://www.digitalocean.com/pricing/droplets",
+ "fetched": "2026-11-08T14:45Z",
+ "note": "Droplet list prices, columns mapped by header name. USD per month is the page's own figure; hourly is the page's figure, not month/730.",
+ "families": [
+  "Basic",
+  "CPU-Optimized",
+  "General Purpose",
+  "Memory-Optimized",
+  "Storage-Optimized"
+ ],
+ "plans": [
+  {
+   "family": "Basic",
+   "memory_gib": 0.5,
+   "vcpus": 1,
+   "transfer_gib": 500.0,
+   "disk_gib": 10.0,
+   "usd_per_hour": 0.00595,
+   "usd_per_month": 4.0
+  },
+  {
+   "family": "Basic",
+   "memory_gib": 1.0,
+   "vcpus": 1,
+   "transfer_gib": 1000.0,
+   "disk_gib": 25.0,
+   "usd_per_hour": 0.00893,
+   "usd_per_month": 6.0
+  },
+  {
+   "family": "Basic",
+   "memory_gib": 2.0,
+   "vcpus": 1,
+   "transfer_gib": 2000.0,
+   "disk_gib": 50.0,
+   "usd_per_hour": 0.01786,
+   "usd_per_month": 12.0
+  },
+  {
+   "family": "Basic",
+   "memory_gib": 2.0,
+   "vcpus": 2,
+   "transfer_gib": 3000.0,
+   "disk_gib": 60.0,
+   "usd_per_hour": 0.02679,
+   "usd_per_month": 18.0
+  },
+  {
+   "family": "Basic",
+   "memory_gib": 4.0,
+   "vcpus": 2,
+   "transfer_gib": 4000.0,
+   "disk_gib": 80.0,
+   "usd_per_hour": 0.03571,
+   "usd_per_month": 24.0
+  },
+  {
+   "family": "Basic",
+   "memory_gib": 8.0,
+   "vcpus": 4,
+   "transfer_gib": 5000.0,
+   "disk_gib": 160.0,
+   "usd_per_hour": 0.07143,
+   "usd_per_month": 48.0
+  },
+  {
+   "family": "Basic",
+   "memory_gib": 16.0,
+   "vcpus": 8,
+   "transfer_gib": 6000.0,
+   "disk_gib": 320.0,
+   "usd_per_hour": 0.14286,
+   "usd_per_month": 96.0
+  },
+  {
+   "family": "CPU-Optimized",
+   "memory_gib": 4.0,
+   "vcpus": 2,
+   "transfer_gib": 4000.0,
+   "disk_gib": 25.0,
+   "usd_per_hour": 0.0625,
+   "usd_per_month": 42.0
+  },
+  {
+   "family": "CPU-Optimized",
+   "memory_gib": 8.0,
+   "vcpus": 4,
+   "transfer_gib": 5000.0,
+   "disk_gib": 50.0,
+   "usd_per_hour": 0.125,
+   "usd_per_month": 84.0
+  },
+  {
+   "family": "CPU-Optimized",
+   "memory_gib": 16.0,
+   "vcpus": 8,
+   "transfer_gib": 6000.0,
+   "disk_gib": 100.0,
+   "usd_per_hour": 0.25,
+   "usd_per_month": 168.0
+  },
+  {
+   "family": "CPU-Optimized",
+   "memory_gib": 32.0,
+   "vcpus": 16,
+   "transfer_gib": 7000.0,
+   "disk_gib": 200.0,
+   "usd_per_hour": 0.5,
+   "usd_per_month": 336.0
+  },
+  {
+   "family": "CPU-Optimized",
+   "memory_gib": 64.0,
+   "vcpus": 32,
+   "transfer_gib": 9000.0,
+   "disk_gib": 400.0,
+   "usd_per_hour": 1.0,
+   "usd_per_month": 672.0
+  },
+  {
+   "family": "CPU-Optimized",
+   "memory_gib": 96.0,
+   "vcpus": 48,
+   "transfer_gib": 11000.0,
+   "disk_gib": 600.0,
+   "usd_per_hour": 1.5,
+   "usd_per_month": 1008.0
+  },
+  {
+   "family": "General Purpose",
+   "memory_gib": 8.0,
+   "vcpus": 2,
+   "transfer_gib": 4000.0,
+   "disk_gib": 25.0,
+   "usd_per_hour": 0.09375,
+   "usd_per_month": 63.0
+  },
+  {
+   "family": "General Purpose",
+   "memory_gib": 16.0,
+   "vcpus": 4,
+   "transfer_gib": 5000.0,
+   "disk_gib": 50.0,
+   "usd_per_hour": 0.1875,
+   "usd_per_month": 126.0
+  },
+  {
+   "family": "General Purpose",
+   "memory_gib": 32.0,
+   "vcpus": 8,
+   "transfer_gib": 6000.0,
+   "disk_gib": 100.0,
+   "usd_per_hour": 0.375,
+   "usd_per_month": 252.0
+  },
+  {
+   "family": "General Purpose",
+   "memory_gib": 64.0,
+   "vcpus": 16,
+   "transfer_gib": 7000.0,
+   "disk_gib": 200.0,
+   "usd_per_hour": 0.75,
+   "usd_per_month": 504.0
+  },
+  {
+   "family": "General Purpose",
+   "memory_gib": 128.0,
+   "vcpus": 32,
+   "transfer_gib": 8000.0,
+   "disk_gib": 400.0,
+   "usd_per_hour": 1.5,
+   "usd_per_month": 1008.0
+  },
+  {
+   "family": "General Purpose",
+   "memory_gib": 160.0,
+   "vcpus": 40,
+   "transfer_gib": 9000.0,
+   "disk_gib": 500.0,
+   "usd_per_hour": 1.875,
+   "usd_per_month": 1260.0
+  },
+  {
+   "family": "Memory-Optimized",
+   "memory_gib": 16.0,
+   "vcpus": 2,
+   "transfer_gib": 4000.0,
+   "disk_gib": 50.0,
+   "usd_per_hour": 0.125,
+   "usd_per_month": 84.0
+  },
+  {
+   "family": "Memory-Optimized",
+   "memory_gib": 32.0,
+   "vcpus": 4,
+   "transfer_gib": 6000.0,
+   "disk_gib": 100.0,
+   "usd_per_hour": 0.25,
+   "usd_per_month": 168.0
+  },
+  {
+   "family": "Memory-Optimized",
+   "memory_gib": 64.0,
+   "vcpus": 8,
+   "transfer_gib": 7000.0,
+   "disk_gib": 200.0,
+   "usd_per_hour": 0.5,
+   "usd_per_month": 336.0
+  },
+  {
+   "family": "Memory-Optimized",
+   "memory_gib": 128.0,
+   "vcpus": 16,
+   "transfer_gib": 8000.0,
+   "disk_gib": 400.0,
+   "usd_per_hour": 1.0,
+   "usd_per_month": 672.0
+  },
+  {
+   "family": "Memory-Optimized",
+   "memory_gib": 192.0,
+   "vcpus": 24,
+   "transfer_gib": 9000.0,
+   "disk_gib": 600.0,
+   "usd_per_hour": 1.5,
+   "usd_per_month": 1008.0
+  },
+  {
+   "family": "Memory-Optimized",
+   "memory_gib": 256.0,
+   "vcpus": 32,
+   "transfer_gib": 10000.0,
+   "disk_gib": 800.0,
+   "usd_per_hour": 2.0,
+   "usd_per_month": 1344.0
+  },
+  {
+   "family": "Storage-Optimized",
+   "memory_gib": 16.0,
+   "vcpus": 2,
+   "transfer_gib": 4000.0,
+   "disk_gib": 300.0,
+   "usd_per_hour": 0.19494,
+   "usd_per_month": 131.0
+  },
+  {
+   "family": "Storage-Optimized",
+   "memory_gib": 32.0,
+   "vcpus": 4,
+   "transfer_gib": 6000.0,
+   "disk_gib": 600.0,
+   "usd_per_hour": 0.38988,
+   "usd_per_month": 262.0
+  },
+  {
+   "family": "Storage-Optimized",
+   "memory_gib": 64.0,
+   "vcpus": 8,
+   "transfer_gib": 7000.0,
+   "disk_gib": 1170.0,
+   "usd_per_hour": 0.77976,
+   "usd_per_month": 524.0
+  },
+  {
+   "family": "Storage-Optimized",
+   "memory_gib": 128.0,
+   "vcpus": 16,
+   "transfer_gib": 8000.0,
+   "disk_gib": 2340.0,
+   "usd_per_hour": 1.55952,
+   "usd_per_month": 1048.0
+  },
+  {
+   "family": "Storage-Optimized",
+   "memory_gib": 192.0,
+   "vcpus": 24,
+   "transfer_gib": 9000.0,
+   "disk_gib": 3520.0,
+   "usd_per_hour": 2.33929,
+   "usd_per_month": 1572.0
+  },
+  {
+   "family": "Storage-Optimized",
+   "memory_gib": 256.0,
+   "vcpus": 32,
+   "transfer_gib": 10000.0,
+   "disk_gib": 4690.0,
+   "usd_per_hour": 3.11905,
+   "usd_per_month": 2096.0
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "officialtech/gunicorn": {
+  "url": "https://raw.githubusercontent.com/officialtech/gunicorn/main/README.md",
+  "status": 200,
+  "chars": 4257,
+  "hits": {
+   "MemoryMax": 0,
+   "MiB/MB figure": 0,
+   "worker count -> memory": 0,
+   "ProtectSystem": 0,
+   "ReadWritePaths": 0,
+   "PrivateTmp": 0,
+   "NoNewPrivileges": 0,
+   "RestrictAddressFamilies": 0,
+   "systemd-analyze verify": 0,
+   "oom-kill / memory pressure": 1
+  }
+ },
+ "ligantx/systemd-gunicorn-uvicorn": {
+  "url": "https://raw.githubusercontent.com/ligantx/systemd-gunicorn-uvicorn/main/README.MD",
+  "status": 200,
+  "chars": 3211,
+  "hits": {
+   "MemoryMax": 0,
+   "MiB/MB figure": 0,
+   "worker count -> memory": 0,
+   "ProtectSystem": 0,
+   "ReadWritePaths": 0,
+   "PrivateTmp": 0,
+   "NoNewPrivileges": 0,
+   "RestrictAddressFamilies": 0,
+   "systemd-analyze verify": 0,
+   "oom-kill / memory pressure": 0
+  }
+ },
+ "django-deployment/django-deployment-configs": {
+  "url": "https://raw.githubusercontent.com/django-deployment/django-deployment-configs/main/README.md",
+  "status": 200,
+  "chars": 2435,
+  "hits": {
+   "MemoryMax": 0,
+   "MiB/MB figure": 0,
+   "worker count -> memory": 0,
+   "ProtectSystem": 0,
+   "ReadWritePaths": 0,
+   "PrivateTmp": 0,
+   "NoNewPrivileges": 0,
+   "RestrictAddressFamilies": 0,
+   "systemd-analyze verify": 0,
+   "oom-kill / memory pressure": 0
+  }
+ },
+ "zmwangx/YODO": {
+  "url": "https://raw.githubusercontent.com/zmwangx/YODO/master/README.md",
+  "status": 200,
+  "chars": 4177,
+  "hits": {
+   "MemoryMax": 0,
+   "MiB/MB figure": 1,
+   "worker count -> memory": 0,
+   "ProtectSystem": 0,
+   "ReadWritePaths": 0,
+   "PrivateTmp": 0,
+   "NoNewPrivileges": 0,
+   "RestrictAddressFamilies": 0,
+   "systemd-analyze verify": 0,
+   "oom-kill / memory pressure": 0
+  }
+ },
+ "gunicorn.org/deploy": {
+  "url": "https://gunicorn.org/deploy/",
+  "status": 200,
+  "chars": 69299,
+  "hits": {
+   "MemoryMax": 0,
+   "MiB/MB figure": 0,
+   "worker count -> memory": 0,
+   "ProtectSystem": 1,
+   "ReadWritePaths": 0,
+   "PrivateTmp": 1,
+   "NoNewPrivileges": 0,
+   "RestrictAddressFamilies": 0,
+   "systemd-analyze verify": 0,
+   "oom-kill / memory pressure": 0
+  }
+ },
+ "stackharbor guide": {
+  "url": "https://stackharbor.com/en/knowledge-base/gunicorn-systemd-nginx-deploy/",
+  "status": 200,
+  "chars": 172433,
+  "hits": {
+   "MemoryMax": 0,
+   "MiB/MB figure": 0,
+   "worker count -> memory": 1,
+   "ProtectSystem": 0,
+   "ReadWritePaths": 0,
+   "PrivateTmp": 0,
+   "NoNewPrivileges": 0,
+   "RestrictAddressFamilies": 0,
+   "systemd-analyze verify": 0,
+   "oom-kill / memory pressure": 2
+  }
+ }
+}

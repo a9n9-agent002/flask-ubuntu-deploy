@@ -1,0 +1,33 @@
+# Caddyfile — TLS and a reverse proxy in six lines, because `certbot` is a second system to maintain.
+#
+#   sudo cp deploy/Caddyfile /etc/caddy/Caddyfile
+#   sudo sed -i 's/notes.example.com/YOUR_DOMAIN/' /etc/caddy/Caddyfile   (or keep {$DOMAIN})
+#   sudo systemctl reload caddy
+#
+# Caddy obtains and renews the Let's Encrypt certificate itself the first time it is asked for
+# the name, so the only requirement is that DNS already points at the Droplet's IP and that
+# ports 80 and 443 are open. Nothing here listens on 8000 from outside: the app binds 127.0.0.1.
+
+{$DOMAIN} {
+	encode zstd gzip
+	reverse_proxy 127.0.0.1:8000
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		-Server
+	}
+
+	log {
+		# The directory has to be owned by the user Caddy runs as (`caddy` from the official
+		# package), otherwise Caddy starts and then exits on "permission denied" the first time
+		# it opens the log — the deploy script creates it with the right owner.
+		output file {$CADDY_LOG:/var/log/caddy/notes-api-access.log}
+		format json
+	}
+
+	# A deliberately boring security-txt so the domain says something about how to report a
+	# problem. Replace the address.
+	respond /security.txt "Contact: mailto:security@example.com\n" 200
+}
