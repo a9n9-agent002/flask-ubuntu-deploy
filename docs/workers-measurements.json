@@ -1,0 +1,181 @@
+{
+ "calibration": {
+  "cpu_ms_alone": 10.1,
+  "iters": 200000,
+  "iters_per_s": 19700000
+ },
+ "cpu_sync": {
+  "concurrency": 8,
+  "cpu_ms": 10.1,
+  "duration_s": 6.0,
+  "rows": [
+   {
+    "p50_ms": 85.52,
+    "pss_mib": 46.11,
+    "rps": 92.35,
+    "rss_mib": 68.36,
+    "workers": 1
+   },
+   {
+    "p50_ms": 86.34,
+    "pss_mib": 69.21,
+    "rps": 84.86,
+    "rss_mib": 105.35,
+    "workers": 2
+   },
+   {
+    "p50_ms": 88.26,
+    "pss_mib": 91.94,
+    "rps": 91.62,
+    "rss_mib": 142.56,
+    "workers": 3
+   },
+   {
+    "p50_ms": 94.66,
+    "pss_mib": 135.82,
+    "rps": 92.6,
+    "rss_mib": 215.71,
+    "workers": 5
+   },
+   {
+    "p50_ms": 83.38,
+    "pss_mib": 219.04,
+    "rps": 91.55,
+    "rss_mib": 358.52,
+    "workers": 9
+   }
+  ]
+ },
+ "derived": {
+  "cpu_mean_rps": 90.75,
+  "cpu_spread_max_over_min": 1.091,
+  "formula_workers_1vcpu": 3,
+  "marginal_worker_pss_mib": [
+   {
+    "from_workers": 1,
+    "pss_mib_per_added_worker": 23.03,
+    "to_workers": 2
+   },
+   {
+    "from_workers": 2,
+    "pss_mib_per_added_worker": 22.78,
+    "to_workers": 3
+   },
+   {
+    "from_workers": 3,
+    "pss_mib_per_added_worker": 22.33,
+    "to_workers": 5
+   },
+   {
+    "from_workers": 5,
+    "pss_mib_per_added_worker": 20.67,
+    "to_workers": 9
+   }
+  ],
+  "master_pss_mib": 20.13,
+  "one_worker_total_rss_mib": 68.25,
+  "one_worker_worker_rss_mib": 37.07,
+  "rss_over_pss_9proc": 1.64,
+  "threads16_vs_9proc_pss": 0.224,
+  "threads16_vs_9proc_rps": 1.776
+ },
+ "host": {
+  "note": "absolute rps are this host's core speed; ratios are the transferable part",
+  "pin": "server pinned with `taskset -c 0` for every run named pin1",
+  "vm": "container, 8 logical CPUs visible, 32 GB RAM"
+ },
+ "io_sync": {
+  "concurrency": 20,
+  "duration_s": 6.0,
+  "rows": [
+   {
+    "ideal_p50_ms_at_concurrency": 400.0,
+    "ideal_rps_at_service_time": 50.0,
+    "p50_ms": 421.42,
+    "p95_ms": 460.89,
+    "pss_mib": 46.14,
+    "rps": 47.17,
+    "rss_mib": 68.25,
+    "workers": 1
+   },
+   {
+    "ideal_p50_ms_at_concurrency": 200.0,
+    "ideal_rps_at_service_time": 100.0,
+    "p50_ms": 211.1,
+    "p95_ms": 213.25,
+    "pss_mib": 69.17,
+    "rps": 93.99,
+    "rss_mib": 105.31,
+    "workers": 2
+   },
+   {
+    "ideal_p50_ms_at_concurrency": 133.3,
+    "ideal_rps_at_service_time": 150.0,
+    "p50_ms": 146.18,
+    "p95_ms": 148.37,
+    "pss_mib": 91.95,
+    "rps": 142.04,
+    "rss_mib": 142.36,
+    "workers": 3
+   },
+   {
+    "ideal_p50_ms_at_concurrency": 80.0,
+    "ideal_rps_at_service_time": 250.0,
+    "p50_ms": 84.18,
+    "p95_ms": 85.65,
+    "pss_mib": 136.61,
+    "rps": 235.25,
+    "rss_mib": 217.18,
+    "workers": 5
+   },
+   {
+    "ideal_p50_ms_at_concurrency": 44.4,
+    "ideal_rps_at_service_time": 450.0,
+    "p50_ms": 43.5,
+    "p95_ms": 59.01,
+    "pss_mib": 219.29,
+    "rps": 424.61,
+    "rss_mib": 360.08,
+    "workers": 9
+   }
+  ],
+  "service_ms": 20
+ },
+ "measured_at": "2026-11-10",
+ "threads_cpu": {
+  "p50_ms": 83.69,
+  "rps": 91.52,
+  "threads": 8,
+  "workers": 1
+ },
+ "threads_io": [
+  {
+   "p50_ms": 106.86,
+   "pss_mib": 49.04,
+   "rps": 187.13,
+   "threads": 4,
+   "workers": 1
+  },
+  {
+   "p50_ms": 50.09,
+   "pss_mib": 49.06,
+   "rps": 375.55,
+   "threads": 8,
+   "workers": 1
+  },
+  {
+   "p50_ms": 23.08,
+   "pss_mib": 49.07,
+   "rps": 754.2,
+   "threads": 16,
+   "workers": 1
+  }
+ ],
+ "versions": {
+  "cpu_count_host": 8,
+  "flask": "3.1.3",
+  "gunicorn": "26.2.0",
+  "kernel": "7.0.0-38-generic",
+  "python": "3.14.9"
+ }
+}

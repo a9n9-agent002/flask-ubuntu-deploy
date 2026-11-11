@@ -69,7 +69,10 @@ check('test_wsgi.sh' in readme and 'test_wsgi.sh' in sizing,
 # docs/gunicorn-memory-per-worker.md quotes measured numbers; its own checker recomputes them from
 # docs/memory-measurements.json, and its selftest proves the checker fails on a mutated doc.
 for script in ('tests/test_docs.py', 'tests/selftest_docs.py', 'tests/test_v5.py',
-               'tests/test_service_doc.py', 'tests/selftest_service_doc.py'):
+               'tests/test_service_doc.py', 'tests/selftest_service_doc.py',
+               'tests/test_workers_doc.py', 'tests/selftest_workers_doc.py',
+               'tests/test_reload_doc.py', 'tests/selftest_reload_doc.py',
+               'tests/test_caddy_doc.py', 'tests/selftest_caddy_doc.py'):
     r = subprocess.run([sys.executable, script], cwd=HERE, capture_output=True, text=True)
     check(r.returncode == 0, f'{script} failed: {(r.stdout + r.stderr).strip()[-300:]}')
 
