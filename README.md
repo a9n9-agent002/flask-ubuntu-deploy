@@ -149,6 +149,14 @@ realistic floor for anything with a database and a reverse proxy on the same box
   listen backlog here was **5**, so a burst of connections was refused before Python saw them and the
   proxy had no upstream to talk to. The unit and server now ask for **128**. Re-run the burst test in
   `deploy/tests/` before blaming the framework.
+- **How much memory does Caddy use on a small VPS?** Measured on this repo's own Caddy v2.10.2
+  proxying its own API, not quoted from a post: **41.73 MiB** proportional memory idle, **47.50 MiB**
+  peak across 2,000 requests at concurrency 10, and **48.25 MiB** settled after 20,000 requests —
+  still 48.25 MiB 120 s after the load stopped. Site count is not the driver (**0.72 MiB** across
+  1 to 50 site blocks); in-flight payload is — 1 MiB responses compressed under 100-way concurrency
+  take the peak to **61.05 MiB** against 43.73 MiB with no encoding. The four phases, the raw rows
+  and the harness are in `docs/caddy-memory-usage.md`, `docs/caddy-memory.json` and
+  `tools/bench_caddy.py`.
 
 ## Two things a price table usually gets wrong, and this one does not
 
